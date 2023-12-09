@@ -19,12 +19,13 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 - Configure the template paths in the tailwind.config.js
+- We also scann css file because the tailwing directives lie there in the index.css file
 ```javascript
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,css}",
   ],
   theme: {
     extend: {},
